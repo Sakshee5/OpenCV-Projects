@@ -12,13 +12,13 @@ Takes in an image with scattered coins on a table. The aim is to identify the va
    Thus color detection is used to mask the coins so as to seperate them from the noisy background. Contour Detection can be implemented on the masked image and will be highly    efficient and easy.
 3. The color values corresponding to masking of coins have been obtained by Image Color Detection.py
 
-### Document Scannner Project
+## Document Scannner Project
 Scans document in real time using computer Webcam outputting the actual webcam footage, footage detecting the contours of the document to be scanned as well as the final cropped image of the scanned document. In absence of any document to be detected, the program simply outputs the original image.
 
 ### Concepts used
 Simple image pre-processing techniques, Contour Detection, Warping, Image Stacking
 
-### Invisibility Cloak Project
+## Invisibility Cloak Project
 Harry Potter Fan? Check it out!!! By just using a few simple image processing techniques, I made my childhood fantasy come true and so can you:)
 
 Approach:
@@ -27,5 +27,5 @@ Approach:
 3. Segment out the cloth by generating a mask. 
 4. Generate the final augmented output by replacing the cloth mask pixels by pixels of the background to create a magical effect. 
 
-### Virtual Paint Project
+## Virtual Paint Project
 Uses various techniques and basic functions in OpenCV such as importing WebCam video, color detection, contour detection etc. to build a live project wherein you can draw/paint virtually on your Webcam footage.
