@@ -21,11 +21,16 @@ Simple image pre-processing techniques, Contour Detection, Warping, Image Stacki
 ## Invisibility Cloak Project
 Harry Potter Fan? Check it out!!! By just using a few simple image processing techniques, I made my childhood fantasy come true and so can you:)
 
-Approach:
+### Approach:
 1. Capture and store the background frame for a couple seconds. (Drawback here is that this implementation only works with a static background:( )
 2. Detect the color of the cloth you want to turn into as invisibility cloak using color detection. (Refer WebCam color Detection.py)
 3. Segment out the cloth by generating a mask. 
 4. Generate the final augmented output by replacing the cloth mask pixels by pixels of the background to create a magical effect. 
 
 ## Virtual Paint Project
-Uses various techniques and basic functions in OpenCV such as importing WebCam video, color detection, contour detection etc. to build a live project wherein you can draw/paint virtually on your Webcam footage.
+Uses various techniques and basic functions in OpenCV such as importing WebCam video, color detection, contour detection etc. to build a live project wherein you can draw/paint virtually on your Webcam footage. You can draw using multiple pens/markers at the same time.
+
+### Approach:
+1. For this code implementation, get a marker pen with a unique cap color (the cap color should be different from the body of the marker)
+2. This is so because we will detect the color of the marker cap using color detection techniques.
+3. The cap will be segmented out using masking operations and contours of the cap will be detected. The topmost tip of the contour (marker cap) will be singled out so that we    can use OpenCV's cv2.circle (filled) function to draw lines with the same color as that of the marker wherever we drag the marker on the screen.
